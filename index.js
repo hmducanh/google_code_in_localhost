@@ -2,7 +2,7 @@ var express = require("express");
 var app = express();
 app.set("view engine", "ejs");
 app.set("views", "./views");
-app.listen(8080);
+app.listen(process.env.PORT || 3000);
 
 app.get("/", function(req, res)
 {
